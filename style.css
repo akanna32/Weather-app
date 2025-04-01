@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .weather-app {
+    background-color: rgb(48, 127, 173);
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  #weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  /* Weather icons and card */
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.desc {
+  text-transform: capitalize;
+  font-style: italic;
+  color: #555;
+}
+
+/* Dynamic weather backgrounds high to low affect */ 
+.sunny {
+  background: linear-gradient(to top, #fceabb, #f8b500);
+}
+.cloudy {
+  background: linear-gradient(to top, #d7d2cc, #304352);
+}
+.rainy {
+  background: linear-gradient(to top, #4e54c8, #8f94fb);
+}
+.snowy {
+  background: linear-gradient(to top, #e6dada, #274046);
+}
+.default-bg {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.5s ease;
+}
+.weather-card {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.weather-card {
+  background-color: rgba(116, 96, 129, 0.85); /* so text stands out */
+  backdrop-filter: blur(5px);
+}
